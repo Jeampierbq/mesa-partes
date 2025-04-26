@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4; /* Fondo blanco claro */
+    background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 #navbar {
     background-color: #333;
     padding: 1rem 0;
-    position: relative; /* Posición relativa */
+    position: relative;
     z-index: 10;
 }
 
@@ -47,31 +47,62 @@ body {
     color: #fbbf24;
 }
 
-/* Botón "Mesa de Partes Virtual" sobre la barra de navegación */
+/* Botón "Mesa de Partes Virtual" */
 #navbar .mesa-de-partes-btn-container {
     display: flex;
-    justify-content: flex-end; /* Alinea el botón a la derecha */
-    padding: 0 2rem; /* Espaciado */
-    margin-top: -50px; /* Ajusta para mover el botón hacia arriba */
-    margin-bottom: 10px; /* Añade un poco de separación */
+    justify-content: flex-end;
+    padding: 0 2rem;
+    margin-top: -50px;
+    margin-bottom: 10px;
 }
 
 .mesa-de-partes-btn {
-    background-color: #8b0000; /* Rojo oscuro */
+    background-color: #8b0000;
     color: white;
-    padding: 20px 20px;
+    padding: 10px 20px;
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    width: 250px;
+    width: 180px;
     text-align: center;
-    margin-top: 50px; /* Ajusta este valor para mover el botón hacia abajo */
 }
 
-
 .mesa-de-partes-btn:hover {
-    background-color: #b22222; /* Rojo brillante al pasar el mouse */
+    background-color: #b22222;
+}
+
+/* Sección Hero */
+.hero {
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
+    position: relative;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Asegura que ocupe toda la altura de la sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para texto visible sobre la imagen */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
 }
 
 /* Pie de página */
@@ -95,4 +126,316 @@ footer .footer-links a {
 
 footer .footer-links a:hover {
     text-decoration: underline;
+}
+
+/* Estilos generales para la sección Acerca de Nosotros */
+.about-us {
+    padding: 3rem 1rem;
+    text-align: center; /* Centra el texto en la sección */
+    background-color: #f7f7f7; /* Fondo suave para resaltar el contenido */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+/* Centrar el texto */
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center; /* Centra el texto */
+}
+
+.about-us h3 {
+    font-size: 1.8rem;
+    color: #478ac9;
+    margin-bottom: 1rem;
+    text-align: center; /* Centra el texto */
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    text-align: center; /* Centra el texto */
+}
+
+/* Contenedor del texto */
+.about-text {
+    max-width: 1100px;
+    margin-bottom: 30px;
+    text-align: 800px; /* Centra el texto */
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Mover el párrafo específico a la derecha */
+.about-text p {
+    text-align: right;  /* Mueve este párrafo hacia la derecha */
+    margin-right: 0;     /* Asegura que se alinee a la derecha */
+    margin-left: auto;   /* Empuja el texto hacia la derecha */
+}
+/* Estilos generales para Nuestras Certificaciones */
+.certifications {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-image: url('https://img.freepik.com/fotos-premium/asuntos-comerciales-socios-comerciales-que-negocian-oficina_259150-71438.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 30px 0;
+}
+
+/* Título de la sección */
+.certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff; /* Cambié a blanco para que resalte sobre el fondo */
+    font-weight: bold;
+}
+
+/* Contenedor de las certificaciones */
+.certifications-container {
+    display: flex;
+    justify-content: center; /* Centra las certificaciones */
+    gap: 5px; /* Reduce aún más el espacio entre las certificaciones */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Estilo para cada certificación */
+.certification {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para hacerlo legible sobre la imagen */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Haz que las certificaciones sean más pequeñas */
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+/* Ajuste en el tamaño de la imagen */
+.certification img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título de la certificación */
+.certification h3 {
+    font-size: 1.5rem;
+    color: #478ac9;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del párrafo */
+.certification p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Enlace del reglamento */
+.certification a {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.certification a:hover {
+    background-color: #b22222;
+}
+
+/* Media Queries para hacer la sección responsiva */
+
+/* Para dispositivos más pequeños (móviles en modo retrato) */
+@media (max-width: 768px) {
+    .certifications-container {
+        flex-direction: column; /* Apilar las certificaciones verticalmente */
+        gap: 20px;
+    }
+
+    .certification {
+        width: 100%; /* Las certificaciones ocuparán todo el ancho */
+    }
+}
+
+/* Para dispositivos con pantallas grandes (tabletas en modo apaisado o laptops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .certifications-container {
+        flex-direction: row; /* Alineación horizontal en dispositivos intermedios */
+        gap: 30px;
+    }
+
+    .certification {
+        width: 45%; /* Ajusta el tamaño de las imágenes para dispositivos intermedios */
+    }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .certifications-container {
+        flex-direction: row; /* Mantiene las imágenes y el texto en línea horizontal */
+        gap: 40px;
+    }
+
+    .certification {
+        width: 45%; /* Ajusta las imágenes en pantallas más grandes */
+    }
+}
+
+/* Estilos generales para la sección de Objetivos */
+.objectives {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.objectives h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.objectives-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.objective {
+    flex: 1;
+    max-width: 220px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.objective img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.objective h3 {
+    font-size: 1.5rem;
+    color: #478ac9;
+}
+
+.objective p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilos para la sección de Certificaciones */
+.certifications {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.certification {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.certification a {
+    font-size: 1.1rem;
+    color: #478ac9;
+    text-decoration: none;
+}
+
+.certification a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fbbf24;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    margin-bottom: 1rem;
+}
+
+.footer-copy {
+    font-size: 1rem;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .objectives-container, .certifications-container {
+        flex-direction: column;
+    }
+
+    .objective, .certification {
+        margin-bottom: 20px;
+    }
 }

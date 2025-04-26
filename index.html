@@ -27,10 +27,79 @@
         </nav>
     </header>
 
-    <!-- Aquí puedes agregar más contenido de la página -->
-<h1>inicioooooooooooooooooooooooooo</h1>
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-image" style="background-image: url('https://wallpapers.com/images/hd/meeting-background-4cdxudz0539uwl50.jpg');">
+            <div class="hero-content">
+                <h1>Bienvenidos al Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú</h1>
+                <p>Ofrecemos servicios de arbitraje y resolución de disputas con imparcialidad y eficiencia.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Pie de página -->
+    <!-- Sección Acerca de Nosotros -->
+    <section class="about-us">
+        <h2>Acerca de Nosotros</h2>
+        <h3>Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú</h3>
+        <p>Ofrecemos servicios de administración de arbitrajes y juntas de resolución de disputas en relación a controversias.</p>
+        
+        <!-- Añadido texto arriba -->
+        <div class="about-text">
+            <p>Nos esforzamos en ser un Tribunal Arbitral eficiente, imparcial, eficaz y referente en América Latina.</p>
+        </div>
+
+        <!-- Imágenes alineadas horizontalmente -->
+        <div class="about-images">
+            <!-- Imagen 1 -->
+            <img class="about-image" src="https://tacidhperu.org/wp-content/uploads/2021/06/nosotros02.jpg" alt="Imagen 1">
+            <!-- Imagen 2 -->
+            <img class="about-image" src="https://tacidhperu.org/wp-content/uploads/2021/06/nosotros01.jpg" alt="Imagen 2">
+        </div>
+    </section>
+
+    <!-- Sección de Nuestros Objetivos -->
+    <section class="objectives">
+        <h2>Nuestros Objetivos</h2>
+        <div class="objectives-container">
+            <div class="objective">
+                <img src="https://assets.nicepagecdn.com/08b2390b/6496751/images/4474513.png" alt="Principios">
+                <h3>Principios</h3>
+                <p>Ser una institución árbitral de referencia.</p>
+            </div>
+            <div class="objective">
+                <img src="https://assets.nicepagecdn.com/08b2390b/6496751/images/2935542.png" alt="Calidad">
+                <h3>Calidad</h3>
+                <p>Ofrecer servicios de alta calidad con arbitrajes independientes.</p>
+            </div>
+            <div class="objective">
+                <img src="https://assets.nicepagecdn.com/08b2390b/6496751/images/115909.png" alt="Promover">
+                <h3>Promover</h3>
+                <p>Asegurar procesos rápidos y eficaces de resolución de disputas.</p>
+            </div>
+            <div class="objective">
+                <img src="https://assets.nicepagecdn.com/08b2390b/6496751/images/1356698.png" alt="Prestigio">
+                <h3>Prestigio</h3>
+                <p>Establecerse como líder en resolución de conflictos.</p>
+            </div>
+        </div>
+    </section>
+<!-- Sección de Nuestras Certificaciones -->
+<section class="certifications">
+    <h2>Nuestras Certificaciones</h2>
+    <div class="certifications-container">
+        <div class="certification">
+            <h3>Reglamento de arbitraje</h3>
+            <p>En los procesos de Junta de Resolución de Disputas; seguidos ante el Centro de Arbitraje del Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos Perú (TACIDH-PERU), los Adjudicadores y demás interventores en las JRD, no sólo deberán respetar escrupulosamente las normas contenidas en el presente reglamento y en la legislación aplicable, sino también observar los más elevados principios y estándares éticos.</p>
+            <a href="#">Ver reglamento</a>
+        </div>
+        <div class="certification">
+            <h3>Reglamento de JRD</h3>
+            <p>En los procesos seguidos ante el Centro de Arbitraje del Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos Perú (TACIDH-PERU), los árbitros y demás interventores en los arbitrajes, no sólo deberán respetar escrupulosamente las normas contenidas en el presente reglamento y en la legislación aplicable, sino también observar los más elevados principios y estándares éticos.</p>
+            <a href="#">Ver reglamento</a>
+        </div>
+    </div>
+</section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú</p>
@@ -42,5 +111,24 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+    // Efecto de deslizamiento de las imágenes
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.about-image');
+
+        window.addEventListener('scroll', function() {
+            images.forEach((image) => {
+                const imagePosition = image.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (imagePosition < windowHeight - 100) { // Cuando la imagen está casi visible
+                    image.classList.add('fade-in');
+                }
+            });
+        });
+    });
+    </script>
+
 </body>
 </html>
