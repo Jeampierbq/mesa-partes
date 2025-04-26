@@ -5,6 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú</title>
     <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para el formulario compacto */
+        .contacto-container {
+            max-width: 900px; /* Ancho reducido */
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        
+        .contacto-content {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 500px; /* Altura reducida */
+        }
+        
+        .form-section {
+            flex: 1;
+            padding: 30px; /* Padding reducido */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .image-section {
+            flex: 1;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .contacto-title {
+            color: #981e25;
+            border-bottom: 2px solid #981e25;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 24px; /* Tamaño de fuente reducido */
+        }
+        
+        .form-description {
+            margin-bottom: 20px;
+            font-size: 14px; /* Tamaño de fuente reducido */
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .form-row {
+            display: flex;
+            margin-bottom: 15px; /* Margen reducido */
+            gap: 40px; /* Espacio entre campos reducido */
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px; /* Tamaño de fuente reducido */
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px; /* Padding reducido */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px; /* Tamaño de fuente reducido */
+        }
+        
+        .form-group textarea {
+            height: 100px; /* Altura reducida */
+            resize: vertical;
+        }
+        
+        .form-divider {
+            border-top: 1px solid #eee;
+            margin: 20px 0; /* Margen reducido */
+        }
+        
+        .checkbox-group {
+            margin: 20px 0; /* Margen reducido */
+            padding: 8px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            font-size: 13px; /* Tamaño de fuente reducido */
+        }
+        
+        .checkbox-group input {
+            margin-right: 8px;
+            transform: scale(1.1);
+        }
+        
+        .submit-btn {
+            background-color: #981e25;
+            color: white;
+            border: none;
+            padding: 10px 25px; /* Padding reducido */
+            font-size: 14px; /* Tamaño de fuente reducido */
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+            width: 100%;
+            max-width: 250px; /* Ancho reducido */
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .submit-btn:hover {
+            background-color: #b22222;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .contacto-content {
+                flex-direction: column;
+                min-height: auto;
+            }
+            
+            .image-section {
+                order: -1;
+                height: 200px; /* Altura reducida para móviles */
+            }
+            
+            .form-section {
+                padding: 20px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -26,9 +177,61 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Aquí puedes agregar más contenido de la página -->
-<h1>contactooooooo </h1>
+    <!-- Contenido del formulario de contacto con imagen -->
+    <main class="contacto-container">
+        <div class="contacto-content">
+            <div class="form-section">
+                <h1 class="contacto-title">Contáctenos</h1>
+                
+                <p class="form-description">
+                    Por favor complete los campos del formulario, un ejecutivo se pondrá en contacto con usted lo antes posible.
+                </p>
+                
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombres">Nombres</label>
+                            <input type="text" id="nombres" name="nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="detalle">Detalle de contacto</label>
+                        <textarea id="detalle" name="detalle" required></textarea>
+                    </div>
+                    
+                    <div class="form-divider"></div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Al enviar este formulario acepto el flujo transformativo de mis datos personales según la Ley de Protección de Datos Personales.</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">ENVIAR FORMULARIO</button>
+                </form>
+            </div>
+            
+            <div class="image-section">
+                <!-- Reemplaza "imagen-contacto.jpg" con la ruta de tu imagen -->
+                <img src="imagen-contacto.jpg" alt="Imagen de contacto">
+            </div>
+        </div>
+    </main>
     <!-- Pie de página -->
     <footer>
         <div class="container">
