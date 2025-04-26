@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4; /* Fondo blanco claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+#navbar {
+    background-color: #333;
+    padding: 1rem 0;
+    position: relative; /* Posición relativa */
+    z-index: 10;
+}
+
+#navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#navbar .logo img {
+    height: 50px;
+}
+
+#navbar .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#navbar .nav-links li {
+    margin: 0;
+}
+
+#navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover para los enlaces */
+#navbar .nav-links a:hover {
+    color: #fbbf24;
+}
+
+/* Botón "Mesa de Partes Virtual" sobre la barra de navegación */
+#navbar .mesa-de-partes-btn-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    padding: 0 2rem; /* Espaciado */
+    margin-top: -50px; /* Ajusta para mover el botón hacia arriba */
+    margin-bottom: 10px; /* Añade un poco de separación */
+}
+
+.mesa-de-partes-btn {
+    background-color: #8b0000; /* Rojo oscuro */
+    color: white;
+    padding: 20px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    text-align: center;
+    margin-top: 50px; /* Ajusta este valor para mover el botón hacia abajo */
+}
+
+
+.mesa-de-partes-btn:hover {
+    background-color: #b22222; /* Rojo brillante al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: #fbbf24;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
